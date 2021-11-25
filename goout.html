@@ -1,0 +1,135 @@
+
+
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://tjxx.lnu.edu.cn/getpass.asp?qjid=854973 -->
+<html>
+
+<head>
+    <meta charset=UTF-8"UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>出校通行证(2分钟内有效)</title>
+    <link rel="stylesheet" href="css/weui.min.css" tppabs="https://www.wulihub.com.cn/gc/JPKKnX/css/weui.min.css">
+    <script type="text/javascript" src="js/weui.min.js-v=2021111094123" tppabs="https://www.wulihub.com.cn/gc/JPKKnX/js/weui.min.js?v=2021111094123" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/colorpicker.js" tppabs="https://www.wulihub.com.cn/gc/JPKKnX/js/colorpicker.js" charset="UTF-8"></script>
+	<script>
+		var int = self.setInterval("clock()",1000);
+		function clock(){
+			var t = new Date();
+			var hour = t.getHours();
+			var minute = t.getMinutes();
+			var second = t.getSeconds();
+			var nowTime = hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":") + second;
+			document.getElementById("clock").innerText=nowTime;
+		}
+	</script>
+</head>
+
+<body ontouchstart="" mpa-version="7.16.14" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg">
+
+    <div id="bodyDiv">
+        <p id="color-picker" style="text-align:center;background:green;"><br><img src="images/pass2.png" tppabs="https://www.wulihub.com.cn/gc/JPKKnX/images/pass2.png" width="330px" height="225px" alt=""><br>
+            <font style="font-size:100px">
+			<span id="clock">
+				<script>
+					var t = new Date();
+					var hour = t.getHours();
+					var minute = t.getMinutes();
+					var second = t.getSeconds();
+					var nowTime = hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":") + second;
+					document.write(nowTime);
+				</script>
+			</span>
+            </font>
+        </p>
+        <div class="weui-cells__title">学生出校通行证</div>
+        <div class="weui-cells">
+            <div class="weui-cell  weui-cell_example">
+                <div class="weui-cell__hd"><img src="images/person.png" tppabs="https://www.wulihub.com.cn/gc/JPKKnX/images/person.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+                <div class="weui-cell__bd">
+                    <p>学号：
+                        <script>
+                            var va1 = localStorage.value1
+                            document.write(va1)
+                        </script>
+                    </p>
+                </div>
+            </div>
+            <div class="weui-cell  weui-cell_example">
+                <div class="weui-cell__hd"><img src="images/person.png" tppabs="https://www.wulihub.com.cn/gc/JPKKnX/images/person.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+                <div class="weui-cell__bd">
+                    <p>姓名：
+                        <script>
+                            var va2 = localStorage.value2
+                            document.write(va2)
+                        </script>
+                    </p>
+                </div>
+            </div>
+            <div class="weui-cell  weui-cell_example">
+                <div class="weui-cell__hd"><img src="images/person.png" tppabs="https://www.wulihub.com.cn/gc/JPKKnX/images/person.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+                <div class="weui-cell__bd">
+                    <p>学院：
+                        <script>
+                            var va3 = localStorage.value3
+                            document.write(va3)
+                        </script>
+                    </p>
+                </div>
+            </div>
+            <div class="weui-cell  weui-cell_example">
+                <div class="weui-cell__hd"><img src="images/time.png" tppabs="https://www.wulihub.com.cn/gc/JPKKnX/images/time.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+                <div class="weui-cell__bd">
+                    <p>时间：
+                        <script type="text/javascript">
+                            var t = new Date();
+                            var year = t.getFullYear();
+                            var month = t.getMonth() + 1;
+                            var day = t.getDate();
+                            // var hour = t.getHours();
+                            // var minute = t.getMinutes();
+                            // var second = t.getSeconds();
+                            var nowTime = year + "/" + month + "/" + day;
+                            document.write(nowTime);
+                        </script>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <div class="weui-footer">
+            <p>版权所有 © 辽宁大学</p>
+            <input type="color" id="myColor" onchange="ChangeColor()" style="opacity:0;">
+        </div>
+    </div>
+    <script type="text/javascript">
+		var obj = document.getElementById("picker");
+		var a = Colorpicker.create({
+			el: "color-picker",
+			color: "#2eb82e",
+			change: function (elem, hex) {
+				elem.style.backgroundColor = hex;
+			}
+		})
+    </script>
+
+    <div class="mpa-sc mpa-plugin-article-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-article-gatherer"></div>
+    <div class="mpa-sc mpa-plugin-image-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-image-gatherer"></div>
+    <div class="mpa-sc mpa-plugin-page-clipper mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-page-clipper"></div>
+    <div class="mpa-sc mpa-plugin-text-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-text-gatherer"></div>
+    <div class="mpa-sc mpa-plugin-video-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-video-gatherer"></div>
+    <div class="mpa-sc mpa-plugin-side-function-panel mpa-new mpa-rootsc" data-z="110" style="display: block;" id="mpa-rootsc-side-function-panel"></div>
+    <div class="mpa-sc mpa-plugin-notifier mpa-new mpa-rootsc" data-z="120" style="display: block;" id="mpa-rootsc-notifier"></div>
+    <div class="mpa-sc mpa-plugin-notification-manager mpa-new mpa-rootsc" data-z="130" style="display: block;" id="mpa-rootsc-notification-manager"></div>
+</body>
+<div style="all: initial;">
+    <div id="__hcfy__" style="all: initial;"></div>
+</div>
+<div style="all: initial;">
+    <div style="all: initial;"></div>
+</div>
+
+</html>
